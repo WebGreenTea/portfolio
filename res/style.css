@@ -80,6 +80,10 @@ body {
     justify-content: end;
 }
 
+.project-img-auto-width{
+    width: 70%;
+}
+
 
 @media (max-width: 767px) {
     .headerbox {
@@ -88,5 +92,12 @@ body {
     }
     .download-project-btn{
         justify-content: start;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .project-img-auto-width{
+        width: 100%;
     }
 }

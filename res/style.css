@@ -75,10 +75,18 @@ body {
     right: 0;
 }
 
+.download-project-btn{
+    display: flex;
+    justify-content: end;
+}
+
 
 @media (max-width: 767px) {
     .headerbox {
         display: flex;
         justify-content: center;
+    }
+    .download-project-btn{
+        justify-content: start;
     }
 }

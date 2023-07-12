@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="res/style.css">
     <script src="js/main.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        loadLastProject()
+     }, false);
+
+     </script>
     <title>Sahawuth Boonyurn</title>
 
 <body>
@@ -95,10 +100,9 @@
                 </section>
                 <section class="bg-dark mt-4 rounded">
                     <div>
-                        
                         <h2 class="mb-3 ps-4 pt-4 pe-4">Projects</h2>
-                        <div>
-                            <div class="row project ps-4 pe-4" onclick="location.href='project/emeeting_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)">
+                        <div id="project_panel">
+                            <div class="row project ps-4 pe-4" onclick="location.href='project/emeeting_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)" hidden>
                                 <div style="position: relative;">
                                     <div class="project-btn-area">
                                         <span class="project-btn " style="display: none;"><i class="fa fa-chevron-right"></i></span>
@@ -121,7 +125,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="row project ps-4 pe-4" onclick="location.href='project/havecom_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)">
+                            <div class="row project ps-4 pe-4" onclick="location.href='project/havecom_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)" hidden>
                                 <div style="position: relative;">
                                     <div class="project-btn-area">
                                         <span class="project-btn " style="display: none;"><i class="fa fa-chevron-right"></i></span>
@@ -143,7 +147,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="row project ps-4 pe-4" onclick="location.href='project/meteoriteAssault_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)">
+                            <div class="row project ps-4 pe-4" onclick="location.href='project/meteoriteAssault_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)" hidden>
                                 <div style="position: relative;">
                                     <div class="project-btn-area">
                                         <span class="project-btn " style="display: none;"><i class="fa fa-chevron-right"></i></span>
@@ -155,20 +159,20 @@
                                         <br>
                                         <b>Technology Stack - </b> Python, Pygame
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-4">
                                                 <img src="res/project/Mete_Ass/python_game2.png" alt="" width="100%">
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-4">
                                                 <img src="res/project/Mete_Ass/python_game.png" alt="" width="100%">
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-4">
                                                 <img src="res/project/Mete_Ass/python_game3.png" alt="" width="100%">
                                             </div>
                                         </div>
                                     </p>
                                 </div>
                             </div>
-                            <div class="row project ps-4 pe-4" onclick="location.href='project/think2grow_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)">
+                            <div id="project_2" class="row project ps-4 pe-4" onclick="location.href='project/think2grow_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)" hidden>
                                 <div style="position: relative;">
                                     <div class="project-btn-area">
                                         <span class="project-btn " style="display: none;"><i class="fa fa-chevron-right"></i></span>
@@ -179,10 +183,16 @@
                                         A brain training game. which is a tree raising game by answering math problems.
                                         <br>
                                         <b>Technology Stack - </b> Java
+                                        <div class="row">
+                                            <div class="col-3"><img src="res/project/think2grow/1.png" alt="" width="100%"></div>
+                                            <div class="col-3"><img src="res/project/think2grow/12.png" alt="" width="100%"></div>
+                                            <div class="col-3"><img src="res/project/think2grow/6.png" alt="" width="100%"></div>
+                                            <div class="col-3"><img src="res/project/think2grow/4.png" alt="" width="100%"></div>
+                                        </div>
                                     </p>
                                 </div>
                             </div>
-                            <div class="row project ps-4 pe-4" onclick="location.href='project/classify_dog_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)">
+                            <div class="row project ps-4 pe-4" onclick="location.href='project/classify_dog_p.html'" onmouseover="hoverProject(this)" onmouseleave="mouseLeave(this)" hidden>
                                 <div style="position: relative;">
                                     <div class="project-btn-area">
                                         <span class="project-btn " style="display: none;"><i class="fa fa-chevron-right"></i></span>
@@ -192,9 +202,16 @@
                                         <br>
                                         <!-- A brain training game. which is a tree raising game by answering math problems. -->
                                         <br>
-                                        <b>Technology Stack - </b> Python
+                                        <b>Technology Stack - </b> Python, TensorFlow
+                                        <div class="row">
+                                            <div class="col-5"><img src="res/project/dog_classify/2.png" alt="" width="100%"></div>
+                                            <div class="col-7"></div>
+                                        </div>
                                     </p>
                                 </div>
+                            </div>
+                            <div class="ps-4 pe-4 pb-3 d-flex justify-content-center align-items-center">
+                                <button href="" class="btn btn-outline-info" style="width: 100%;" onclick="loadMore(this)">more <i class="fa fa-fw fa-angle-down" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>

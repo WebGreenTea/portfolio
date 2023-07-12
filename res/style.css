@@ -53,10 +53,6 @@ body {
     color: #25cae0;
 }
 
-.project{
-    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-    opacity: 0;
-}
 .project:hover {
     background-color: rgb(41, 41, 41);
     cursor: pointer;
@@ -79,6 +75,28 @@ body {
     right: 0;
 }
 
+.loadmore-btn-area{
+    position: relative;
+    /* top: 70%; */
+    bottom: 0;
+    width: 100%;
+
+}
+
+.loadmore-btn{
+    border: 1px #25cae0 solid;
+    border-radius: 5px;
+    color: #25cae0;
+    background: rgba(0, 0, 0,0);
+}
+
+.loadmore-btn:hover{
+    border: 1px #25cae0 solid;
+    border-radius: 5px;
+    color: black;
+    background: #25cae0;
+}
+
 .download-project-btn{
     display: flex;
     justify-content: end;
@@ -88,10 +106,13 @@ body {
     width: 70%;
 }
 
-.hidden{
-    visibility: hidden;
-    transition: visibility 0.5s ease;;
+.project-panel{
+    height: 800px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
 }
+
 
 @media (max-width: 767px) {
     .headerbox {
